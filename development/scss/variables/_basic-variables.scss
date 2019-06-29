@@ -1,0 +1,20 @@
+//fonts
+$mont: 'Montserrat', sans-serif;
+$rob: 'Roboto Condensed', sans-serif;
+$open: 'Open Sans', sans-serif;
+$play: 'Playfair Display', serif;
+
+//colors
+$bgtop: #5a2f83, #3b185d;
+$bgbottom: #3b185d, #5a2f83;
+
+//sizes
+$browser-default-size: 16 !default;
+
+@function setdefault-rem-px($size: $browser-default-size) {
+    @return #{$size}px;
+}
+
+@function rem($pixels, $context: $browser-default-size) {
+    @return #{$pixels/$context}rem;
+}

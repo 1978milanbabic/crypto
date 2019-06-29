@@ -1,0 +1,49 @@
+.colab {
+    width: 100%;
+    padding-bottom: rem(25);
+    padding-left: rem(12);
+    text-align: left;
+    margin-top: rem(-48);
+
+    img {
+        margin: 0 rem(12);
+    }
+
+    #colab1 {
+        width: rem(86);
+    }
+
+    #colab2 {
+        width: rem(172);
+    }
+
+    #colab3 {
+        width: rem(141);
+    }
+
+    #colab4 {
+        width: rem(117);
+    }
+
+    p {
+        color: #fff;
+        font-family: $play;
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: 1;
+        padding-bottom: rem(55);
+        margin-left: rem(-12);
+    }
+
+} // colab
+
+@media screen and (max-width: 500px) {
+    .colab {
+        margin-top: rem(-52);
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

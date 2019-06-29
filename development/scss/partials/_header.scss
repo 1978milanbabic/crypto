@@ -1,0 +1,105 @@
+header {
+    width: 100%;
+
+    .inner {
+        text-align: right;
+    }
+
+    .counter-cont {
+        display: inline-block;
+        text-align: center;
+
+        p {
+            font-size: rem(24);
+            color: #911474;
+            padding: rem(20) 0 rem(20);
+        }
+    }
+
+    .counter {
+        display: table;
+        line-height: 1;
+        text-align: center;
+        color: #000;
+        font-size: 0;
+        font-weight: 700;
+        font-family: $rob;
+    }
+
+    .days-cell, .hours-cell, .mins-cell, .secs-cell {
+        width: rem(153);
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .dots-cell {
+        width: rem(30);
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: rem(72);
+    }
+
+    .tens, .units {
+        display: inline-block;
+        width: rem(70);
+        padding: rem(20) 0;
+        background-image: -webkit-linear-gradient( 90deg, rgb(173,139,42) 0%, rgb(255,248,155) 100%);
+        border-radius: 10px;
+        box-shadow: 2.5px -4.33px 5px 0px rgba(0, 0, 0, 0.4);
+        font-size: rem(72);
+    }
+
+    .tens {
+        margin-right: rem(10);
+    }
+
+    .counter-legend {
+        width: rem(702);
+        display: table;
+        padding: rem(10) 0;
+
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            width: rem(153);
+            text-align: center;
+            color: #000;
+            font-size: rem(18);
+            font-family: $rob;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        i {
+            display: table-cell;
+        }
+    }
+
+
+}//header
+
+@media screen and (max-width: 735px) {
+    header {
+
+        .counter {
+            width: 100%;
+        }
+
+        .tens, .units {
+            width: rem(68);
+        }
+
+        .tens {
+            margin-right: rem(8);
+        }
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .counter-legend span {
+        font-weight: 700;
+        background-color: rgba(255,255,255,0.4);
+    }
+}

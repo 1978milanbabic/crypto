@@ -1,0 +1,19 @@
+@keyframes tick {
+    0% {
+        transform: translateY(0) rotateX(0deg);
+    }
+    50% {
+        transform: translateY(-50%) rotateX(90deg);
+    }
+    51% {
+        transform: translateY(50%) rotateX(-90deg);
+    }
+    100% {
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+.tick {
+    animation: tick 0.2s ease-in-out;
+    animation-fill-mode: both;
+}
